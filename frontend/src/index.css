@@ -1,0 +1,23 @@
+/* index.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  line-height: 1.6;
+  position: relative;
+  /* background-image: url("./components/bg.jpeg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}

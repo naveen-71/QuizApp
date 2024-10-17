@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* Light grey background for the body */
+  color: #333; /* Dark text for better readability */
+}
+
+/* Result Container */
+.result {
+  background-color: #ffffff; /* White background for result area */
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #007bff; /* Border for better distinction */
+}
+
+/* Result Heading */
+.result h2 {
+  color: #343a40; /* Dark grey */
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Result Paragraphs */
+.result p {
+  font-size: 18px;
+  margin: 8px 0;
+  color: #5a5a5a; /* Medium grey */
+}
+
+/* Review Button */
+.buttonreview {
+  background-color: #007bff; /* Blue background */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.buttonreview:hover {
+  background-color: #0056b3; /* Darker blue */
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Feedback Section */
+.feedback {
+  background-color: #ffffff; /* Different background from the body */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 600px;
+  margin: 30px auto;
+  border: 2px solid #007bff; /* Border for feedback area */
+}
+
+/* Feedback Heading */
+.feedback h3 {
+  color: #343a40; /* Dark grey */
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+/* Star Rating Section */
+.review {
+  margin: 20px 0;
+}
+
+/* Star Container */
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Spacing between stars */
+}
+
+/* Star Styles */
+.star {
+  cursor: pointer;
+  transition: transform 0.2s; /* Smooth scaling on hover */
+}
+
+.star:hover {
+  transform: scale(1.2); /* Enlarge star on hover */
+}
+
+/* Feedback Form */
+.feedback-form {
+  margin-top: 20px;
+}
+
+/* Textarea Styles */
+.feedback-form textarea {
+  width: 100%;
+  margin: 0;
+  background: #f7f7f7; /* Light background for textarea */
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  resize: none; /* Prevent resizing */
+  border: 1px solid #ced4da; /* Border color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+/* Textarea Focus Effect */
+.feedback-form textarea:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Submit Button Styles */
+.feedback-form .btn {
+  background-color: #007bff; /* Blue background */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 3px 6px rgba(0, 123, 255, 0.5);
+  transition: background-color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.feedback-form .btn:hover {
+  background-color: #0056b3; /* Darker blue */
+  box-shadow: 0px 3px 6px rgba(0, 86, 179, 0.8);
+  transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .result, .feedback {
+      padding: 20px; /* Less padding on small screens */
+  }
+
+  .result h2, .feedback h3 {
+      font-size: 1.5rem; /* Smaller headings */
+  }
+
+  .result p, .feedback-form textarea {
+      font-size: 16px; /* Adjust paragraph size */
+  }
+
+  .buttonreview, .feedback-form .btn {
+      width: 100%; /* Full width buttons */
+  }
+}
+
+/* Star Rating (SVG) Specific Styles */
+input[type='radio'] {
+  display: none; /* Hide the radio inputs */
+}
+
+label {
+  cursor: pointer; /* Cursor indicates clickable */
+}
+
+/* Star Color Change */
+input[type='radio']:checked + svg {
+  fill: #ffc107; /* Yellow when selected */
+}
+
+input[type='radio']:checked ~ label svg {
+  fill: #ffc107; /* Apply to all previous stars */
+}

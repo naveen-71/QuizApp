@@ -1,0 +1,112 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9; /* Light background */
+  color: #333;
+}
+
+/* Quiz Container Styles */
+
+.quiz {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  animation: fadeIn 0.5s ease-in-out; /* Fade-in effect */
+}
+
+/* Header Styles */
+
+.quiz h2 {
+  color: #3498db; /* Blue color */
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family:"Sen", sans-serif;
+}
+
+.quiz h5 {
+  color: #090c1c;
+  margin-bottom: 15px;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+}
+
+/* Options Styles */
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between options */
+}
+
+.option {
+  background-color: #cfcfcfbf; /* Green color */
+  color: #000000;
+  padding: 15px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.option:hover {
+  background-color: #001aff; /* Darker green on hover */
+}
+
+.option.selected {
+  background-color: #1abc9c; /* Lighter green on selection */
+}
+
+/* Timer Styles */
+
+.timer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #666;
+}
+
+/* Button Styles */
+
+.next-button, .submit-button {
+  background-color: #4CAF50; /* Green color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  position: relative;
+  left: 680px;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.next-button:hover, .submit-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.next-button:active, .submit-button:active {
+  transform: translateY(2px);
+}
+
+/* Fade-in Animation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
